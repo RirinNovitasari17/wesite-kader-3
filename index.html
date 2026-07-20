@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portofolio pribadi Ririn Novitasari — profesional kreatif yang berdedikasi." />
+    <meta name="author" content="Ririn Novitasari" />
+    <title>Ririn Novitasari — Portofolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=DM+Serif+Display:ital@0;1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ─── NAVBAR ─────────────────────────────── -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-brand" aria-label="Ririn Novitasari">RN<span
+                    style="color: var(--accent);">.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-a on" id="na-home" data-i18n="nav-home">Beranda</a></li>
+                <li><a href="#about" class="nav-a" id="na-about" data-i18n="nav-about">Tentang</a></li>
+                <li><a href="#skills" class="nav-a" id="na-skills" data-i18n="nav-skills">Keahlian</a></li>
+                <li><a href="#experience" class="nav-a" id="na-exp" data-i18n="nav-exp">Pengalaman</a></li>
+                <li><a href="#projects" class="nav-a" id="na-prj" data-i18n="nav-prj">Proyek</a></li>
+                <li><a href="#contact" class="nav-a" id="na-ct" data-i18n="nav-ct">Kontak</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="langBtn" class="ctrl-btn" aria-label="Toggle Language">ID</button>
+                <button id="musicBtn" class="ctrl-btn" aria-label="Toggle Music">
+                    <i class="fas fa-volume-xmark"></i>
+                </button>
+            </div>
+            <button class="hamburger" id="burger" aria-label="Menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ─── HERO ───────────────────────────────── -->
+    <section class="hero" id="home">
+        <div class="hero-grid">
+            <div class="hero-text reveal-l">
+                <h1 class="hero-h">
+                    <span class="hero-greet" data-i18n="hero-greet">Halo.</span><br>
+                    <span class="hero-sub" data-i18n="hero-sub">Saya</span><br>
+                    <span class="hero-name1">Ririn</span><br>
+                    <em class="hero-name2">Novitasari</em>
+                </h1>
+                <p class="hero-typed" id="typed"><span id="typedTxt"></span><span class="cursor"></span></p>
+                <p class="hero-p" data-i18n="hero-p">Individu yang berdedikasi, kreatif, dan konsisten dalam setiap
+                    langkah perjalanan profesional. Saya percaya bahwa kualitas lahir dari komitmen yang tidak pernah
+                    goyah.</p>
+                <div class="hero-actions">
+                    <a href="#about" class="btn btn-solid" id="hero-btn-about">
+                        <span data-i18n="hero-btn-about">Kenali Saya</span> <i class="fas fa-arrow-down"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-ghost" id="hero-btn-contact">
+                        <span data-i18n="hero-btn-contact">Hubungi</span> <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual reveal-r">
+                <div class="avatar-ring">
+                    <!-- Gunakan relative path untuk pengembangan web -->
+                    <img src="assets/foto ririn.png" class="avatar-img" alt="Ririn Novitasari"
+                        onerror="this.style.background='#18181f';this.style.minHeight='340px'" />
+                </div>
+                <div class="hero-chip chip-1"><span class="dot"></span> <span data-i18n="hero-chip-1">Kreatif &amp;
+                        Inovatif</span></div>
+                <div class="hero-chip chip-2"><span class="dot"></span> <span data-i18n="hero-chip-2">Konsisten &amp;
+                        Berdedikasi</span></div>
+            </div>
+        </div>
+        <div class="scroll-cue" data-i18n="hero-scroll">Scroll</div>
+    </section>
+
+    <!-- ─── TENTANG ─────────────────────────────── -->
+    <section class="sec" id="about">
+        <div class="wrap">
+            <div class="sh reveal">
+                <span class="sh-eyebrow" data-i18n="about-eyebrow">Tentang Saya</span>
+            </div>
+            <div class="about-grid">
+                <div class="reveal-l">
+                    <div class="about-photo-box">
+                        <div class="about-photo-bg"></div>
+                        <img src="assets/foto ririn.png" class="about-photo" alt="Ririn Novitasari"
+                            onerror="this.style.background='#18181f';this.style.minHeight='380px'" />
+                        <div class="avail-pill"><span class="avail-dot"></span> <span data-i18n="about-avail">Open to
+                                Opportunities</span></div>
+                    </div>
+                </div>
+                <div class="reveal-r">
+                    <div class="about-eyebrow">
+                        <span class="line-x"></span>
+                        <span class="about-label" data-i18n="about-label">Profil Singkat</span>
+                    </div>
+                    <h3 class="about-name">Ririn Novitasari</h3>
+                    <p class="about-title" data-i18n="about-title-role">Mahasiswa Aktif &amp; Profesional Kreatif</p>
+                    <p class="about-p" data-i18n="about-p1">Saya adalah individu yang penuh semangat dan selalu haus
+                        akan pengembangan diri. Dengan latar belakang yang kuat dalam dunia kreatif dan akademis, saya
+                        berkomitmen untuk memberikan hasil terbaik dalam setiap hal yang saya kerjakan.</p>
+                    <p class="about-p" data-i18n="about-p2">Konsistensi adalah nilai utama saya. Setiap pengalaman
+                        menjadi batu loncatan menuju versi diri yang lebih baik — tidak hanya secara kompetensi, tetapi
+                        juga karakter dan personal branding yang autentik.</p>
+                    <div class="info-grid">
+                        <div class="info-cell">
+                            <span class="ic-label"><i class="fas fa-user"></i><span
+                                    data-i18n="about-info-name">Nama</span></span>
+                            <span class="ic-val">Ririn Novitasari</span>
+                        </div>
+                        <div class="info-cell">
+                            <span class="ic-label"><i class="fas fa-graduation-cap"></i><span
+                                    data-i18n="about-info-status-label">Status</span></span>
+                            <span class="ic-val" data-i18n="about-info-status-val">Mahasiswa Aktif</span>
+                        </div>
+                        <div class="info-cell">
+                            <span class="ic-label"><i class="fas fa-map-pin"></i><span
+                                    data-i18n="about-info-domicile">Domisili</span></span>
+                            <span class="ic-val">Lampung Barat</span>
+                        </div>
+                        <div class="info-cell">
+                            <span class="ic-label"><i class="fas fa-language"></i><span
+                                    data-i18n="about-info-language">Bahasa</span></span>
+                            <span class="ic-val" data-i18n="about-info-language-val">Indonesia &amp; Inggris</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-solid"><span data-i18n="about-btn-collab">Mari
+                            Berkolaborasi</span> <i class="fas fa-handshake"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── KEMAMPUAN ─────────────────────────── -->
+    <section class="sec" id="skills">
+        <div class="wrap">
+            <div class="sh reveal">
+                <span class="sh-eyebrow" data-i18n="skills-eyebrow">Kemampuan</span>
+                <h2 class="sh-title"><span data-i18n="skills-title">Keahlian &amp; <em>Kompetensi</em></span></h2>
+                <p class="sh-sub" data-i18n="skills-sub">Kumpulan kemampuan yang terus diasah dan dikembangkan setiap
+                    hari</p>
+            </div>
+            <div class="tab-row reveal">
+                <button class="tab-pill on" data-tp="hard">Hard Skills</button>
+                <button class="tab-pill" data-tp="soft">Soft Skills</button>
+                <button class="tab-pill" data-tp="tools">Tools</button>
+            </div>
+
+            <div class="pane on" id="tp-hard">
+                <div class="sk-grid">
+                    <div class="sk-card">
+                        <div class="sk-ico"><i class="fas fa-pen-nib"></i></div>
+                        <p class="sk-nm" data-i18n="sk-content-writing">Penulisan Konten</p>
+                        <p class="sk-dc" data-i18n="sk-content-writing-dc">Konten yang menarik, informatif, dan
+                            SEO-friendly untuk berbagai platform digital.</p>
+                        <div class="sk-bar-r">
+                            <div class="sk-bar" data-w="88">
+                                <div class="sk-fill"></div>
+                            </div><span class="sk-pct">88%</span>
+                        </div>
+                    </div>
+                    <div class="sk-card">
+                        <div class="sk-ico"><i class="fas fa-palette"></i></div>
+                        <p class="sk-nm" data-i18n="sk-graphic-design">Desain Grafis</p>
+                        <p class="sk-dc" data-i18n="sk-graphic-design-dc">Visual yang estetis dan profesional untuk
+                            kebutuhan branding dan media sosial.</p>
+                        <div class="sk-bar-r">
+                            <div class="sk-bar" data-w="82">
+                                <div class="sk-fill"></div>
+                            </div><span class="sk-pct">82%</span>
+                        </div>
+                    </div>
+                    <div class="sk-card">
+                        <div class="sk-ico"><i class="fas fa-hashtag"></i></div>
+                        <p class="sk-nm" data-i18n="sk-sosmed">Manajemen Media Sosial</p>
+                        <p class="sk-dc" data-i18n="sk-sosmed-dc">Mengelola akun media sosial dengan strategi konten
+                            yang terencana dan konsisten.</p>
+                        <div class="sk-bar-r">
+                            <div class="sk-bar" data-w="90">
+                                <div class="sk-fill"></div>
+                            </div><span class="sk-pct">90%</span>
+                        </div>
+                    </div>
+                    <div class="sk-card">
+                        <div class="sk-ico"><i class="fas fa-presentation-screen"></i></div>
+                        <p class="sk-nm" data-i18n="sk-presentation">Presentasi Publik</p>
+                        <p class="sk-dc" data-i18n="sk-presentation-dc">Menyampaikan ide secara sistematis, percaya
+                            diri, dan menarik di hadapan audiens.</p>
+                        <div class="sk-bar-r">
+                            <div class="sk-bar" data-w="85">
+                                <div class="sk-fill"></div>
+                            </div><span class="sk-pct">85%</span>
+                        </div>
+                    </div>
+                    <div class="sk-card">
+                        <div class="sk-ico"><i class="fas fa-magnifying-glass"></i></div>
+                        <p class="sk-nm" data-i18n="sk-research">Riset &amp; Analisis</p>
+                        <p class="sk-dc" data-i18n="sk-research-dc">Riset mendalam dan analisis data untuk mendukung
+                            pengambilan keputusan yang tepat.</p>
+                        <div class="sk-bar-r">
+                            <div class="sk-bar" data-w="80">
+                                <div class="sk-fill"></div>
+                            </div><span class="sk-pct">80%</span>
+                        </div>
+                    </div>
+                    <div class="sk-card">
+                        <div class="sk-ico"><i class="fas fa-calendar-check"></i></div>
+                        <p class="sk-nm" data-i18n="sk-event">Event Organizing</p>
+                        <p class="sk-dc" data-i18n="sk-event-dc">Merencanakan dan mengelola acara dari konsep hingga
+                            eksekusi secara profesional.</p>
+                        <div class="sk-bar-r">
+                            <div class="sk-bar" data-w="78">
+                                <div class="sk-fill"></div>
+                            </div><span class="sk-pct">78%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pane" id="tp-soft">
+                <div class="ss-grid">
+                    <div class="ss-row">
+                        <div class="ss-ico"><i class="fas fa-comments"></i></div>
+                        <div class="ss-info">
+                            <h4 data-i18n="ss-communication">Komunikasi</h4>
+                            <p data-i18n="ss-communication-dc">Menyampaikan pesan dengan jelas, empati, dan efektif</p>
+                        </div>
+                        <div class="levels"><span class="lv on"></span><span class="lv on"></span><span
+                                class="lv on"></span><span class="lv on"></span><span class="lv on"></span></div>
+                    </div>
+                    <div class="ss-row">
+                        <div class="ss-ico"><i class="fas fa-people-group"></i></div>
+                        <div class="ss-info">
+                            <h4 data-i18n="ss-teamwork">Kerja Tim</h4>
+                            <p data-i18n="ss-teamwork-dc">Berkolaborasi harmonis untuk mencapai tujuan bersama</p>
+                        </div>
+                        <div class="levels"><span class="lv on"></span><span class="lv on"></span><span
+                                class="lv on"></span><span class="lv on"></span><span class="lv on"></span></div>
+                    </div>
+                    <div class="ss-row">
+                        <div class="ss-ico"><i class="fas fa-crown"></i></div>
+                        <div class="ss-info">
+                            <h4 data-i18n="ss-leadership">Kepemimpinan</h4>
+                            <p data-i18n="ss-leadership-dc">Memimpin dan memotivasi tim dengan integritas dan visi</p>
+                        </div>
+                        <div class="levels"><span class="lv on"></span><span class="lv on"></span><span
+                                class="lv on"></span><span class="lv on"></span><span class="lv"></span></div>
+                    </div>
+                    <div class="ss-row">
+                        <div class="ss-ico"><i class="fas fa-arrows-spin"></i></div>
+                        <div class="ss-info">
+                            <h4 data-i18n="ss-adaptability">Adaptabilitas</h4>
+                            <p data-i18n="ss-adaptability-dc">Fleksibel dan cepat beradaptasi dengan perubahan situasi
+                            </p>
+                        </div>
+                        <div class="levels"><span class="lv on"></span><span class="lv on"></span><span
+                                class="lv on"></span><span class="lv on"></span><span class="lv on"></span></div>
+                    </div>
+                    <div class="ss-row">
+                        <div class="ss-ico"><i class="fas fa-brain"></i></div>
+                        <div class="ss-info">
+                            <h4 data-i18n="ss-problemsolving">Problem Solving</h4>
+                            <p data-i18n="ss-problemsolving-dc">Berpikir kritis dan kreatif dalam menyelesaikan masalah
+                            </p>
+                        </div>
+                        <div class="levels"><span class="lv on"></span><span class="lv on"></span><span
+                                class="lv on"></span><span class="lv on"></span><span class="lv"></span></div>
+                    </div>
+                    <div class="ss-row">
+                        <div class="ss-ico"><i class="fas fa-clock"></i></div>
+                        <div class="ss-info">
+                            <h4 data-i18n="ss-timemanagement">Manajemen Waktu</h4>
+                            <p data-i18n="ss-timemanagement-dc">Mengatur prioritas dan memenuhi deadline secara
+                                konsisten</p>
+                        </div>
+                        <div class="levels"><span class="lv on"></span><span class="lv on"></span><span
+                                class="lv on"></span><span class="lv on"></span><span class="lv on"></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pane" id="tp-tools">
+                <div class="tools">
+                    <div class="tool"><i class="fas fa-swatchbook"></i> Canva</div>
+                    <div class="tool"><i class="fas fa-vector-square"></i> Figma</div>
+                    <div class="tool"><i class="fas fa-file-word"></i> Microsoft Word</div>
+                    <div class="tool"><i class="fas fa-file-excel"></i> Microsoft Excel</div>
+                    <div class="tool"><i class="fas fa-file-powerpoint"></i> PowerPoint</div>
+                    <div class="tool"><i class="fab fa-instagram"></i> Instagram</div>
+                    <div class="tool"><i class="fab fa-tiktok"></i> TikTok</div>
+                    <div class="tool"><i class="fab fa-youtube"></i> YouTube</div>
+                    <div class="tool"><i class="fas fa-note-sticky"></i> Notion</div>
+                    <div class="tool"><i class="fas fa-film"></i> CapCut</div>
+                    <div class="tool"><i class="fab fa-google"></i> Google Workspace</div>
+                    <div class="tool"><i class="fas fa-chart-line"></i> Google Analytics</div>
+                    <div class="tool"><i class="fab fa-linkedin"></i> LinkedIn</div>
+                    <div class="tool"><i class="fas fa-bullhorn"></i> Content Planning</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── PENGALAMAN ──────────────────────────── -->
+    <section class="sec" id="experience">
+        <div class="wrap">
+            <div class="sh reveal">
+                <span class="sh-eyebrow" data-i18n="exp-eyebrow">Pengalaman</span>
+                <h2 class="sh-title"><span data-i18n="exp-title">Jejak <em>Perjalanan</em></span></h2>
+                <p class="sh-sub" data-i18n="exp-sub">Setiap pengalaman adalah pelajaran yang membentuk karakter diri
+                </p>
+            </div>
+            <div class="tl">
+                <div class="tl-item">
+                    <div class="tl-node"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="tl-body">
+                        <div class="tl-top"><span class="tl-badge" data-i18n="exp-badge-academic">Akademik</span><span
+                                class="tl-yr"><i class="fas fa-calendar-alt"></i> <span
+                                    data-i18n="exp-academic-period">2026 – Sekarang</span></span></div>
+                        <h3 class="tl-h" data-i18n="exp-academic-title">Mahasiswa Aktif</h3>
+                        <p class="tl-co"><i class="fas fa-university"></i> <span
+                                data-i18n="exp-academic-place">Universitas Teknokrat Indonesia</span></p>
+                        <p class="tl-p" data-i18n="exp-academic-p">Menjalani perkuliahan dengan penuh semangat dan aktif
+                            terlibat dalam berbagai kegiatan akademik. Mempertahankan prestasi sambil mengembangkan soft
+                            skill melalui kegiatan kemahasiswaan yang beragam.</p>
+                        <div class="tl-tags"><span class="tl-tag" data-i18n="exp-tag-academic">Akademik</span><span
+                                class="tl-tag" data-i18n="exp-tag-leadership">Kepemimpinan</span><span class="tl-tag"
+                                data-i18n="exp-tag-org">Organisasi</span></div>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-node"><i class="fas fa-users"></i></div>
+                    <div class="tl-body">
+                        <div class="tl-top"><span class="tl-badge" data-i18n="exp-badge-org">Organisasi</span><span
+                                class="tl-yr"><i class="fas fa-calendar-alt"></i> 2026 – Sekarang</span></div>
+                        <h3 class="tl-h" data-i18n="exp-org-title">Pengurus Organisasi Kemahasiswaan</h3>
+                        <p class="tl-co"><i class="fas fa-building"></i> <span data-i18n="exp-org-place">Ikatan Beasiswa
+                                Teknokrat</span></p>
+                        <p class="tl-p" data-i18n="exp-org-p">Aktif sebagai pengurus dan bertanggung jawab dalam
+                            perencanaan serta pelaksanaan berbagai program kerja yang memberikan dampak nyata bagi
+                            civitas akademika.</p>
+                        <div class="tl-tags"><span class="tl-tag" data-i18n="exp-tag-management">Manajemen</span><span
+                                class="tl-tag">Event Organizing</span><span class="tl-tag">Team Work</span></div>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-node"><i class="fas fa-briefcase"></i></div>
+                    <div class="tl-body">
+                        <div class="tl-top"><span class="tl-badge" data-i18n="exp-badge-intern">Magang</span><span
+                                class="tl-yr"><i class="fas fa-calendar-alt"></i> 2024</span></div>
+                        <h3 class="tl-h" data-i18n="exp-intern-title">Intern / Magang Profesional</h3>
+                        <p class="tl-co"><i class="fas fa-building"></i> <span data-i18n="exp-intern-place">Lembaga /
+                                Perusahaan</span></p>
+                        <p class="tl-p" data-i18n="exp-intern-p">Mendapatkan pengalaman kerja nyata di lingkungan
+                            profesional. Terlibat langsung dalam proyek-proyek yang mengasah kemampuan teknis dan
+                            interpersonal.</p>
+                        <div class="tl-tags"><span class="tl-tag"
+                                data-i18n="exp-tag-professional">Profesional</span><span class="tl-tag">Real
+                                Project</span><span class="tl-tag" data-i18n="exp-tag-networking">Networking</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-node"><i class="fas fa-medal"></i></div>
+                    <div class="tl-body">
+                        <div class="tl-top"><span class="tl-badge"
+                                data-i18n="exp-badge-achievement">Prestasi</span><span class="tl-yr"><i
+                                    class="fas fa-calendar-alt"></i> 2023</span></div>
+                        <h3 class="tl-h" data-i18n="exp-achievement-title">Partisipan Kompetisi &amp; Lomba</h3>
+                        <p class="tl-co"><i class="fas fa-flag"></i> <span data-i18n="exp-achievement-place">Tingkat
+                                Regional / Nasional</span></p>
+                        <p class="tl-p" data-i18n="exp-achievement-p">Berpartisipasi dalam berbagai kompetisi akademik
+                            dan non-akademik yang melatih mentalitas kompetitif, kemampuan strategis, dan ketangguhan
+                            menghadapi tekanan.</p>
+                        <div class="tl-tags"><span class="tl-tag" data-i18n="exp-tag-competition">Kompetisi</span><span
+                                class="tl-tag" data-i18n="exp-tag-achievement">Prestasi</span><span class="tl-tag"
+                                data-i18n="exp-tag-strategy">Strategi</span></div>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-node"><i class="fas fa-hand-holding-heart"></i></div>
+                    <div class="tl-body">
+                        <div class="tl-top"><span class="tl-badge" data-i18n="exp-badge-volunteer">Volunteer</span><span
+                                class="tl-yr"><i class="fas fa-calendar-alt"></i> <span
+                                    data-i18n="exp-volunteer-period">2022 – Sekarang</span></span></div>
+                        <h3 class="tl-h" data-i18n="exp-volunteer-title">Kegiatan Sosial &amp; Relawan</h3>
+                        <p class="tl-co"><i class="fas fa-heart"></i> <span data-i18n="exp-volunteer-place">Komunitas
+                                &amp; LSM</span></p>
+                        <p class="tl-p" data-i18n="exp-volunteer-p">Aktif terlibat dalam kegiatan sosial yang memberikan
+                            dampak positif bagi masyarakat, memperkaya perspektif, dan membangun kepekaan sosial.</p>
+                        <div class="tl-tags"><span class="tl-tag" data-i18n="exp-tag-social">Sosial</span><span
+                                class="tl-tag" data-i18n="exp-tag-empathy">Empati</span><span class="tl-tag"
+                                data-i18n="exp-tag-impact">Dampak Positif</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── PROYEK ─────────────────────────────── -->
+    <section class="sec" id="projects">
+        <div class="wrap">
+            <div class="sh reveal">
+                <span class="sh-eyebrow" data-i18n="prj-eyebrow">Proyek Terpilih</span>
+                <h2 class="sh-title"><span data-i18n="prj-title">Karya &amp; <em>Pencapaian</em></span></h2>
+                <p class="sh-sub" data-i18n="prj-sub">Beberapa karya dan proyek terbaik yang pernah saya tangani, dari
+                    konsep hingga eksekusi nyata.</p>
+            </div>
+            <div class="cr-main reveal">
+                <div class="cr-card wide">
+                    <div class="cr-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h3 data-i18n="prj-1-title">Kampanye Media Sosial Berkelanjutan</h3>
+                    <p data-i18n="prj-1-p">Merancang dan mengeksekusi kampanye digital end-to-end yang berhasil
+                        meningkatkan brand awareness dan engagement klien. Mulai dari riset audiens, pembuatan kalender
+                        konten, hingga analisis performa.</p>
+                    <div class="cr-items">
+                        <span class="cr-item">Content Planning</span>
+                        <span class="cr-item">Social Media Strategy</span>
+                        <span class="cr-item">Analytics</span>
+                    </div>
+                </div>
+                <div class="cr-card">
+                    <div class="cr-icon"><i class="fas fa-pen-nib"></i></div>
+                    <h3 data-i18n="prj-2-title">Manajemen Konten Blog &amp; Artikel</h3>
+                    <p data-i18n="prj-2-p">Menulis puluhan artikel SEO-friendly yang informatif dan edukatif, membantu
+                        klien mendapatkan trafik organik yang stabil setiap bulan.</p>
+                    <div class="cr-items">
+                        <span class="cr-item">Copywriting</span>
+                        <span class="cr-item">SEO</span>
+                    </div>
+                </div>
+                <div class="cr-card">
+                    <div class="cr-icon"><i class="fas fa-palette"></i></div>
+                    <h3 data-i18n="prj-3-title">Visual Identity &amp; Rebranding Bisnis</h3>
+                    <p data-i18n="prj-3-p">Berkolaborasi membantu merancang ulang identitas visual UMKM lokal agar
+                        tampil lebih modern, menarik, dan sesuai dengan target pasar masa kini.</p>
+                    <div class="cr-items">
+                        <span class="cr-item" data-i18n="prj-3-tag">Desain Grafis</span>
+                        <span class="cr-item">Brand Identity</span>
+                    </div>
+                </div>
+                <div class="cr-card">
+                    <div class="cr-icon"><i class="fas fa-video"></i></div>
+                    <h3 data-i18n="prj-4-title">Produksi Konten Video Pendek (Reels/TikTok)</h3>
+                    <p data-i18n="prj-4-p">Mengonsep, mengarahkan, dan mengedit video pendek kreatif yang sukses viral
+                        dan mencapai puluhan ribu tayangan organik secara konsisten.</p>
+                    <div class="cr-items">
+                        <span class="cr-item">Video Editing</span>
+                        <span class="cr-item">Storytelling</span>
+                    </div>
+                </div>
+                <div class="cr-card">
+                    <div class="cr-icon"><i class="fas fa-users"></i></div>
+                    <h3 data-i18n="prj-5-title">Event Organizing Kemahasiswaan</h3>
+                    <p data-i18n="prj-5-p">Menjadi ketua pelaksana seminar nasional dengan 500+ peserta. Mengatur dari
+                        awal konsep, sponsorship, hingga pelaksanaan hari-H dengan lancar.</p>
+                    <div class="cr-items">
+                        <span class="cr-item" data-i18n="prj-5-tag">Manajemen Event</span>
+                        <span class="cr-item">Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── KONTAK ──────────────────────────────── -->
+    <section class="sec" id="contact">
+        <div class="wrap">
+            <div class="sh reveal">
+                <span class="sh-eyebrow" data-i18n="ct-eyebrow">Kontak</span>
+                <h2 class="sh-title"><span data-i18n="ct-title">Mari <em>Terhubung</em></span></h2>
+                <p class="sh-sub" data-i18n="ct-sub">Terbuka untuk kolaborasi, diskusi, dan peluang proyek baru yang
+                    menarik</p>
+            </div>
+            <div class="contact-grid reveal">
+                <div class="cl">
+                    <h3 data-i18n="ct-heading">Hubungi Saya</h3>
+                    <p data-i18n="ct-p">Tertarik berkolaborasi atau sekadar berdiskusi? Saya senang mendengar dari Anda.
+                    </p>
+                    <div class="ci-list">
+                        <div class="ci-row"><span class="ci-ico"><i class="fas fa-envelope"></i></span>
+                            <div>
+                                <p class="ci-lbl">Email</p>
+                                <p class="ci-val">ririn.novitasari@email.com</p>
+                            </div>
+                        </div>
+                        <div class="ci-row"><span class="ci-ico"><i class="fab fa-instagram"></i></span>
+                            <div>
+                                <p class="ci-lbl">Instagram</p>
+                                <p class="ci-val">@ririnnvtasarii</p>
+                            </div>
+                        </div>
+                        <div class="ci-row"><span class="ci-ico"><i class="fab fa-linkedin"></i></span>
+                            <div>
+                                <p class="ci-lbl">LinkedIn</p>
+                                <p class="ci-val">Ririn Novitasari</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <!-- Perbaikan penutup tag <i> -->
+                        <a href="https://www.instagram.com/ririnnvtasarii/" target="_blank" rel="noopener noreferrer"
+                            class="soc" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/ririn-novitasari-undefined-a98891423" target="_blank"
+                            rel="noopener noreferrer" class="soc" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://www.tiktok.com/@ririnnvtasri?_r=1&_t=ZS-98C0MhNtmQn" target="_blank"
+                            rel="noopener noreferrer" class="soc" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@RirinNovitasari-q8o" target="_blank" rel="noopener noreferrer"
+                            class="soc" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="form-card">
+                    <form id="cForm" onsubmit="doSend(event)">
+                        <div class="f2">
+                            <div class="fg">
+                                <label data-i18n="form-name-label">Nama Lengkap</label>
+                                <input type="text" data-i18n-ph="form-name-ph" placeholder="Nama Anda" required />
+                            </div>
+                            <div class="fg">
+                                <label data-i18n="form-email-label">Email</label>
+                                <input type="email" data-i18n-ph="form-email-ph" placeholder="email@contoh.com"
+                                    required />
+                            </div>
+                        </div>
+                        <div class="fg">
+                            <label data-i18n="form-subject-label">Subjek</label>
+                            <input type="text" data-i18n-ph="form-subject-ph" placeholder="Topik pesan Anda" required />
+                        </div>
+                        <div class="fg">
+                            <label data-i18n="form-message-label">Pesan</label>
+                            <textarea rows="5" data-i18n-ph="form-message-ph" placeholder="Tulis pesan Anda di sini..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-solid btn-fw" id="sendBtn">
+                            <span data-i18n="form-send-btn">Kirim Pesan</span> <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="f-ok" id="fOk">
+                        <div class="f-ok-ic"><i class="fas fa-check-circle"></i></div>
+                        <h4 data-i18n="form-success-title">Pesan Terkirim!</h4>
+                        <p data-i18n="form-success-p">Terima kasih. Saya akan segera membalas pesan Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ──────────────────────────────── -->
+    <footer class="footer">
+        <div class="wrap">
+            <div class="f-inner">
+                <div class="f-brand-area">
+                    <div class="f-logo">RN</div>
+                    <span class="f-nm">Ririn Novitasari</span>
+                    <span class="f-sl">Creative &bull; Consistent &bull; Impactful</span>
+                </div>
+                <nav class="f-nav">
+                    <a href="#home" data-i18n="footer-home">Beranda</a>
+                    <a href="#about" data-i18n="footer-about">Tentang</a>
+                    <a href="#skills" data-i18n="footer-skills">Keahlian</a>
+                    <a href="#experience" data-i18n="footer-exp">Pengalaman</a>
+                    <a href="#projects" data-i18n="footer-prj">Proyek</a>
+                    <a href="#contact" data-i18n="footer-ct">Kontak</a>
+                </nav>
+            </div>
+            <div class="f-bot" data-i18n="footer-copy">&copy; 2025 Ririn Novitasari — Portofolio Pribadi</div>
+        </div>
+    </footer>
+
+    <button class="btt" id="btt" aria-label="Kembali ke atas"><i class="fas fa-chevron-up"></i></button>
+
+    <audio id="bgMusic" loop>
+        <!-- Gunakan relative path untuk file audio -->
+        <source src="assets/HOME - Resonance.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
